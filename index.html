@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.1/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Website | Animated Landing Page</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo">iMovies</a>
+        <ul class="nav active">
+            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#">Adults</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">My Lists</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <span class="menu-toggle" ><i class="fa-solid fa-bars"></i>
+             
+        </span>
+        <i class="fa-solid fa-x"></i> 
+       
+    </header>
+    <div class="banner">
+        <div class="background">
+            <div class="video-background" >
+              <video autoplay loop muted class="background-video">
+                <source src="images/movies/background-intro.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="  image-background" ></div>
+            
+        </div>
+          
+        <div class="content" >
+            <div class="left-content">
+                <img src="images/Avatar_Title.png" alt="Movie Title" class="movie-title" />
+            <h4 id="movie-info">
+                <i><span class="movie-genre">Sci-Fi</span>|
+               <span class="movie-duration">2h 42m</span></i> 
+                
+            </h4>
+
+            <p class="movie-description">An epic story set in Pandora.</p>
+            <span class="movie-rating">PG-13</span>
+            
+            </div>
+            
+
+            <div class="release-date">
+                <span class="movie-year"></span>
+                <a href="#" onclick="toogleVideo()" class="watch-trailer"><i class="fa-solid fa-play"></i> Watch Trailer</a>
+            </div>
+        </div>
+        
+       
+        
+
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item" onclick="Avatar(); " >
+                    <img   src="images//movies/Avatar.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="Mermaid();">
+                    <img    src="images/movies/the-little-mermaid.jpeg" alt="">
+                </div>
+                <div class="carousel-item " onclick="sixty_five(); " >
+                    <img  src="images/movies/65.jpg" alt="">
+                </div>
+                <div class="carousel-item" onclick="Blackdemon(); "  >
+                    <img  src="images/movies/the-black-demon.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img onclick="Convenant(); " src="images/movies/the-covenant.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img onclick="Tank(); " src="images/movies/the-tank.jpeg" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+
+       
+        <ul class="sci" >
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="trailor">
+        <video 
+        id="trailer-video"
+        src="images/movies/Avatar_bg.mp4" 
+        controls
+        ></video>
+        <img class="close" src="images/close.png" alt="" onclick="toogleVideo()">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.1/dist/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+    
+</body>
+</html>
